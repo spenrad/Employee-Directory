@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css"
 
-function TableHeader () {
+function TableHeader (props) {
     return (
         <tr>
             <th> Picture</th>
-            <th> Name</th>
+            <th onClick={props.handleClick}> Name</th>
             <th> E-mail</th>
             <th> Phone Number</th>
             <th> Age</th>

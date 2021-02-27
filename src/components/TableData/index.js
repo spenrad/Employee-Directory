@@ -1,31 +1,25 @@
-import React, { useState, useEffect } from "react";
-import API from "../../utils/API";
+import React from "react";
 import "./style.css";
 
-function TableData() {
-  const [employees, setEmployees] = useState({ employees: [] });
-
-  useEffect(function () {
-    API.allEmployees().then(function (results) {
-      console.log(results);
-      setEmployees({
-        ...employees,
-        employees: results.data.results,
-      });
-    });
-  }, []);
+function TableData(props) {
+ 
+return (props.employees.map(function (person) {
 
   return (
     <tr>
       <td>
-        <img src={employees.image} />
+        <img src={person.picture.medium} />
       </td>
-      {employees.name}
-      <td>{employees.email}</td>
-      <td>{employees.cell}</td>
-      <td>{employees.dob}</td>
+      
+      <td>{person.name.first + " " + person.name.last} </td>
+      <td>{person.email}</td>
+      <td>{person.cell}</td>
+      <td>{person.dob.age}</td>
     </tr>
   );
-};
+})
+)
+}
+
 
 export default TableData;
