@@ -4,9 +4,9 @@ import "./style.css"
 function Search(props) {
 
     return(
-        <form>
-            <input onChange={props.handleChange}/>
-        </form>
+        <div id="searchForm"><form >
+            <input onChange={props.handleChange} placeholder="Type Name Here"/>
+        </form></div>
         
     )
 };

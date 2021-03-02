@@ -3,7 +3,7 @@ import "./style.css"
 
 function TableHeader (props) {
     return (
-        <tr>
+        <tr id="tableHeader">
             <th> Picture</th>
             <th onClick={props.handleClick}> Name</th>
             <th> E-mail</th>

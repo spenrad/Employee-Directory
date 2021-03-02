@@ -1,0 +1,5 @@
+tr {background-color: rgb(159, 112, 173);}
+tr:nth-child(even) {background-color: #865b9b;}
+table {
+    width:100%;
+}

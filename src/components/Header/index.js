@@ -4,7 +4,7 @@ import "./style.css"
 function Header() {
 
     return(
-        <div>
+        <div className="header">
             <h1>Employee Directory</h1>
             <p>Sort and search for your colleagues here!</p>
         </div>
