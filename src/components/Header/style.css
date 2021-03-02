@@ -1,9 +1,10 @@
 .header {
-    background-color: rgb(17, 17, 17);
+    background-color: rgba(17, 17, 17, 0.973);
     height: 15vh;
     text-align: center;
-    color:rgb(200, 206, 206);
+    color: rgb(159, 112, 173);
 }
+
 h1 {
     padding-top: 20px;
 }
